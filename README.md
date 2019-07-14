@@ -19,6 +19,7 @@ A persistence context is like a cache which contains a set of persistent entitie
 
 
 **3. @JdbcTest VS @DataJpaTest**
+
 @JdbcTest is similar to @DataJpaTest but it is used for tests that only require a DataSource and do not need Spring Data JDBC
 If you prefer your test to run against a real database, you can use the @AutoConfigureTestDatabase annotation in the same way as for @DataJpaTest
 @AutoConfigureTestDatabase(replace=Replace.NONE) will replace in memory db to actual db source.
